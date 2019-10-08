@@ -49,6 +49,7 @@ services:
             - ./nginx:/etc/nginx/conf.d
             - ./logs/nginx:/var/log/nginx
             - ./www:/var/www/html
+            - ./cert:/etc/nginx/cert
             - /var/run/docker.sock:/tmp/docker.sock:ro
         links:
             - wordpress
